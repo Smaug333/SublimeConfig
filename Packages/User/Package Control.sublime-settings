@@ -1,0 +1,40 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Comments Aware Enter",
+		"CursorRuler",
+		"EditorConfig",
+		"Emmet",
+		"Git",
+		"Git Conflict Resolver",
+		"Git-StatusBar",
+		"GitDiffHelper",
+		"Github Tools",
+		"GitOpenChangedFiles",
+		"GitStatus",
+		"GitSyntaxes",
+		"HTML-CSS-JS Prettify",
+		"Numix Theme",
+		"Origami",
+		"Package Control",
+		"SCSS",
+		"SCSS Expander",
+		"SCSS Snippets",
+		"Search in Project",
+		"SideBarEnhancements",
+		"SideBarFolders",
+		"SideBarGit",
+		"SidebarSeparator",
+		"SublimeGit",
+		"SuiteCommerce-Advanced",
+		"SyncedSideBar",
+		"Terminal",
+		"Theme - Asphalt",
+		"Theme - Numix",
+		"Theme - Soda"
+	]
+}

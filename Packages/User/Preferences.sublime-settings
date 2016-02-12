@@ -1,0 +1,32 @@
+{
+	"color_scheme": "Packages/User/Birds of Paradise.tmTheme",
+	"css":
+	{
+		"indent_char": "	",
+		"indent_size": 1
+	},
+	"draw_indent_guides": true,
+	"highlight_line": true,
+	"html":
+	{
+		"indent_char": "	",
+		"indent_size": 1
+	},
+	"ignored_packages":
+	[
+		"Theme - Asphalt",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"js":
+	{
+		"indent_char": "	",
+		"indent_size": 1
+	},
+	"terminal": "xterm",
+	"theme": "Void.sublime-theme"
+}
