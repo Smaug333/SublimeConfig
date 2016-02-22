@@ -1,4 +1,4 @@
-x{
+{
 	"color_scheme": "Packages/User/Birds of Paradise.tmTheme",
 	"css":
 	{
@@ -27,6 +27,8 @@ x{
 		"indent_char": "	",
 		"indent_size": 1
 	},
+	"soda_classic_tabs": true,
+	"soda_folder_icons": true,
 	"terminal": "xterm",
-	"theme": "Void.sublime-theme"
+	"theme": "Soda Dark 3.sublime-theme"
 }

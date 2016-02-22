@@ -1,8 +1,0 @@
-[
-    { "keys": ["ctrl+keypad_divide"], "command": "toggle_comment", "args": { "block": false } },
-    { "keys": ["ctrl+shift+keypad_divide"], "command": "toggle_comment", "args": { "block": true } },
-    { "keys": ["ctrl+space"], "command": "search_in_project" },
-	{ "keys": ["alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
-	{ "keys": ["ctrl+alt+t"], "command": "open_terminal", "args": { "parameters": ["-T"] },
-}
-]
