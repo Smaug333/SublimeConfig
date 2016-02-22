@@ -20,6 +20,7 @@
 		"GitStatus",
 		"GitSyntaxes",
 		"HTML-CSS-JS Prettify",
+		"JavaScript Completions",
 		"jQuery",
 		"jQuery Snippets pack",
 		"Numix Theme",
@@ -39,6 +40,7 @@
 		"Terminal",
 		"Theme - Asphalt",
 		"Theme - Numix",
-		"Theme - Soda"
+		"Theme - Soda",
+		"WordCompletion"
 	]
 }
