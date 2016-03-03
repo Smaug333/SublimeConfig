@@ -8,5 +8,10 @@
 	{ "keys": ["ctrl+alt+o"], "command": "keep", "args": { "keep": "ours" } },
 	{ "keys": ["ctrl+alt+h"], "command": "keep", "args": { "keep": "theirs" } },
 	{ "keys": ["ctrl+alt+a"], "command": "keep", "args": { "keep": "ancestor" } },
-	{ "keys": ["ctrl+alt+c"], "command": "list_conflict_files" }
+	{ "keys": ["ctrl+alt+c"], "command": "list_conflict_files" },
+    { "keys": ["ctrl+k", "l"], "command": "sublimelinter_lint" },
+    { "keys": ["ctrl+alt+k", "n"], "command": "sublimelinter_goto_error", "args": {"direction": "next"} },
+    { "keys": ["ctrl+alt+k", "p"], "command": "sublimelinter_goto_error", "args": {"direction": "previous"} },
+    { "keys": ["ctrl+alt+k", "a"], "command": "sublimelinter_show_all_errors" },
+    { "keys": ["ctrl+alt+k", "t"], "command": "sublimelinter_toggle_linter", "args": {"which": "all"}}
 ]
