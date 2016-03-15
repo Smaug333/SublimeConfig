@@ -3,7 +3,7 @@
         "debug": false,
         "delay": 0.25,
         "error_color": "D02000",
-        "gutter_theme": "Packages/SublimeLinter/gutter-themes/Danish Royalty/Danish Royalty.gutter-theme",
+        "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
         "gutter_theme_excludes": [],
         "lint_mode": "background",
         "linters": {
@@ -12,8 +12,11 @@
                 "args": [],
                 "exclude-linter": "",
                 "excludes": [],
-                "include-linter": "",
-				"ignore_match": ["SelectorFormat: Selector .*"]
+                "ignore_match": [
+                    "SelectorFormat: Selector .*",
+                    "EmptyLineBetweenBlocks: Rule declaration should be preceded by an empty line"
+                ],
+                "include-linter": ""
             }
         },
         "mark_style": "stippled underline",
@@ -44,7 +47,6 @@
             "pythonimproved": "python"
         },
         "warning_color": "DDB700",
-        "wrap_find": true,
-
+        "wrap_find": true
     }
 }
