@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+@include pseudo-content(${1:before}, ${2:""}, ${3:inline,} ${4:relative}) {
+	${5:property:value};
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>xcontent</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
