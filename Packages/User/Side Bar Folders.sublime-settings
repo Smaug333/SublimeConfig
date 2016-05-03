@@ -2,6 +2,12 @@
 	"folders":
 	[
 		{
+			"path": "/usr/share/meld"
+		},
+		{
+			"path": "/usr/share/gtksourceview-3.0"
+		},
+		{
 			"path": "/home/oliver/Development/Ecma"
 		},
 		{

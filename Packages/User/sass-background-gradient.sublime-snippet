@@ -1,11 +1,10 @@
 <snippet>
 	<content><![CDATA[
-@include pseudo-selector(${1:hover}, ${2:active}, ${3:visitded}, ${4:focus}) {
-	${5:property}: ${6:value} 
-}
+@include background-gradient(${1:w3c-gradientpattern});
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>xpseudo</tabTrigger>
+	<tabTrigger>xgradient</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
+<!-- $image: null, $position: null, $size: null, $repeat: null, $orignin: null, $clip: null, $color: null -->

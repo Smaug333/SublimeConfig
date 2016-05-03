@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+@include background(${1:image}, ${2:position}, ${3:size}, ${4:repeat}, ${5:origin}, ${6:clip}, ${7:color});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>xbackground</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
+<!-- $image: null, $position: null, $size: null, $repeat: null, $orignin: null, $clip: null, $color: null -->
