@@ -1,0 +1,522 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"gutter",
+				"padding-grid-gutter"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "pro",
+		"selected_items":
+		[
+			[
+				"pro",
+				"Project Manager: Add Project"
+			],
+			[
+				"chek",
+				"Git: Checkout"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"ropw",
+				"Project Manager: Open Project in New Window"
+			],
+			[
+				"proop",
+				"Project Manager: Open Project"
+			],
+			[
+				"check",
+				"Git: Checkout"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"prjmop",
+				"Project Manager: Open Project"
+			],
+			[
+				"prjmed",
+				"Project Manager: Edit Project"
+			],
+			[
+				"checkou",
+				"Git: Checkout"
+			],
+			[
+				"html",
+				"StringEncode: HTML Entitize"
+			],
+			[
+				"html encode",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"show",
+				"Git: Show Current File"
+			],
+			[
+				"proj",
+				"Project: Save As"
+			],
+			[
+				"prjm",
+				"Project Manager"
+			],
+			[
+				"htmlent",
+				"StringEncode: HTML Entitize"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"prm",
+				"Project Manager: Edit Project"
+			],
+			[
+				"destr",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"ori",
+				"Origami: Create Pane Below"
+			],
+			[
+				"prmn",
+				"Project Manager: Open Project in New Window"
+			],
+			[
+				"oride",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"checko",
+				"Git: Checkout"
+			],
+			[
+				"checkoutb",
+				"Git: Checkout New Branch"
+			],
+			[
+				"paco",
+				"Package Control: Install Package"
+			],
+			[
+				"prjmanaop",
+				"Project Manager: Add Project"
+			]
+		],
+		"width": 732.0
+	},
+	"console":
+	{
+		"height": 240.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/oliver/Development/grunt-plugins/global-vars"
+	],
+	"file_history":
+	[
+		"/home/oliver/Development/grunt-plugins/global-vars/tasks/global_vars.js",
+		"/home/oliver/Development/betago/app/src/components/account/inc/cmp_account-bets_result.inc",
+		"/home/oliver/Development/betago/app/src/components/account/inc/cmp_account-bets_list.inc",
+		"/home/oliver/Development/betago/app/src/components/account/inc/cmp_account-bets_row.inc",
+		"/home/oliver/Development/betago/app/src/components/account/inc/cmp_account-bets_header.inc",
+		"/home/oliver/Development/betago/app/src/modules/lists/mod_list-match-fit.html",
+		"/home/oliver/Development/betago/app/src/components/account/inc/cmp_account-bets_game-result.inc",
+		"/home/oliver/Development/betago/app/src/components/account/cmp_account-bets-rated.html",
+		"/home/oliver/Development/betago/app/src/components/account/cmp_account-bets-open.html",
+		"/home/oliver/Development/betago/app/build/css/components.css",
+		"/home/oliver/Development/betago/app/src/index_templates.html",
+		"/home/oliver/Development/betago/app/src/components/navbar/cmp_navbar-logged-in.html",
+		"/home/oliver/Development/betago/app/src/modules/navigations/mod_navlist-user.html",
+		"/home/oliver/Development/betago/app/src/components/account/inc/cmp_account-bets_footer.inc",
+		"/home/oliver/Development/betago/app/src/components/account/inc/cmp_account-bets-row.html",
+		"/home/oliver/Development/betago/app/src/components/account/inc/cmp_account-bets_filter.inc",
+		"/home/oliver/Development/betago/app/src/index.html",
+		"/home/oliver/Development/betago/Gruntfile.js",
+		"/home/oliver/Development/betago/grunt/aliases.yaml",
+		"/home/oliver/Development/betago/grunt/watch.js",
+		"/home/oliver/Development/betago/grunt/notify.js",
+		"/home/oliver/Development/betago/app/src/inc/grid/offcanvas/offcanvas_left-flat.inc",
+		"/home/oliver/Development/betago/grunt/merge_objects.js",
+		"/home/oliver/Development/betago/grunt-setup/_globalInc.js",
+		"/home/oliver/Development/betago/app/src/modules/_modules-overview.html",
+		"/home/oliver/Development/betago/app/src/inc/grid/globals.js",
+		"/home/oliver/Development/betago/app/src/data_html/grid/grid-site.html",
+		"/home/oliver/Development/betago/grunt/includereplacemore.js",
+		"/home/oliver/Development/betago/app/src/inc/grid/offcanvas/offcanvas_left-clear.inc",
+		"/home/oliver/Development/regex/regular.txt",
+		"/home/oliver/Development/betago/grunt-setup/globalIncConverted.js",
+		"/home/oliver/Development/betago/grunt-setup/gruntPath.json",
+		"/home/oliver/Development/betago/grunt/gruntPath.json",
+		"/home/oliver/scripts/betagostart.zsh",
+		"/home/oliver/scripts/zsh/zsh-config/functions.zsh",
+		"/home/oliver/.config/sublime-text-3/Packages/User/Projects/betago.sublime-project",
+		"/usr/bin/gnome-software",
+		"/home/oliver/Development/betago/app/src/components/payment/scss/_cmp_payment.scss",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/cmp_payment_action.inc",
+		"/home/oliver/Development/betago/app/src/data_html/payment/payment-request.html",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/wrapper/cmp_payment_cell.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/cmp_payment.html",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/cmp_payment_provider-list.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/cmp_payment_provider.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/cmp_payment_provider-single.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/content/cmp_payment_header.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/wrapper/cmp_payment_start.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/content/cmp_payment_form.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/content/cmp_payment_header-no.inc",
+		"/home/oliver/Development/betago/app/src/data_html/payment/payment-out.html",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/cmp_payment_provider-all.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/table/cmp_payment_head-index.inc",
+		"/home/oliver/Development/betago/app/src/data_html/payment/payment-deposit.html",
+		"/home/oliver/Development/betago/app/src/data_html/payment/payment-options.html",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/table/cmp_payment_conditions.inc",
+		"/home/oliver/Development/betago/grunt/incGlobals.json",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/ui/cmp_payment_submit.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/ui/cmp_payment_confirm.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/ui/cmp_payment_cancel.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/helper-layout/cmp_payment_head-type.inc",
+		"/home/oliver/Development/betago/app/src/components/betslip/cmp_betslip-placed.html",
+		"/home/oliver/Development/betago/package.json",
+		"/home/oliver/Development/betago/app/src/components/betslip/action/cmp_betslip_action--collapse.html",
+		"/home/oliver/Development/betago/app/src/inc/grid/grid-start.inc",
+		"/home/oliver/Development/betago/app/src/components/betslip/cmp_betslip-error.html",
+		"/home/oliver/Development/betago/app/src/components/betslip/cmp_betslip.html",
+		"/home/oliver/Development/betago/app/src/components/betslip/cmp_betslip-empty.html",
+		"/home/oliver/Development/betago/app/src/components/legals/cmp_legals-contact-modal.html",
+		"/home/oliver/Development/betago/app/src/components/legals/cmp_legals-privacy-modal.html",
+		"/home/oliver/Development/betago/app/src/components/legals/cmp_legals-terms-modal.html",
+		"/home/oliver/Development/betago/app/src/components/login/cmp_login-modal.html",
+		"/home/oliver/Development/betago/app/src/components/settings-account/cmp_settings-account_password-forgot-modal.html",
+		"/home/oliver/Development/betago/app/src/components/settings-global/cmp_settings-global-modal.html",
+		"/home/oliver/Development/betago/app/src/components/tools/cmp_calculator.html",
+		"/home/oliver/Development/betago/app/src/data_html/grid/grid-flex.html",
+		"/home/oliver/Development/betago/app/src/inc/document-markup/document-start.inc",
+		"/home/oliver/Development/betago/app/src/inc/grid/grid-end.inc",
+		"/home/oliver/Development/betago/app/src/inc/grid/grid-loader_offcanvas.inc",
+		"/home/oliver/Development/betago/app/src/inc/grid/modal/grid-modal-defaults.inc",
+		"/home/oliver/Development/betago/app/src/inc/grid/offcanvas/offcanvas_right-specific.inc",
+		"/home/oliver/Development/betago/app/src/inc/index/index_head.inc",
+		"/home/oliver/Development/betago/app/src/modules/lists/mod_list-match-live.html",
+		"/home/oliver/Development/betago/app/src/modules/lists/mod_list-match.html",
+		"/home/oliver/Development/betago/app/src/modules/modals/inc/mod_modal_end-close.inc",
+		"/home/oliver/Development/betago/app/src/modules/modals/inc/mod_modal_end.inc",
+		"/home/oliver/Development/betago/app/src/modules/modals/inc/mod_modal_start.inc",
+		"/home/oliver/Development/betago/app/src/modules/offcanvas/inc/mod_offcanvas_button-all.inc",
+		"/home/oliver/Development/betago/app/src/modules/offcanvas/inc/mod_offcanvas_button-left.inc",
+		"/home/oliver/Development/betago/app/src/modules/offcanvas/inc/mod_offcanvas_button-right.inc",
+		"/home/oliver/Development/betago/app/src/modules/offcanvas/mod_offcanvas.html",
+		"/home/oliver/Development/betago/app/src/modules/offcanvas/inc/mod_offcanvas_button.inc",
+		"/home/oliver/Development/betago/app/src/data_html/account/account_bets-all.html",
+		"/home/oliver/Development/betago/app/build/data_html/account/account_bets-all.html",
+		"/home/oliver/Development/betago/app/src/modules/forms/mod_form-login.html",
+		"/home/oliver/Development/betago/app/src/components/navbar/cmp_navbar.html",
+		"/home/oliver/Development/betago/app/src/inc/grid/modal/grid-modal-clear.inc",
+		"/home/oliver/Development/betago/app/build/sites/account/account_bets-all.html",
+		"/home/oliver/Development/betago/grunt/includereplace.js",
+		"/home/oliver/regular.txt",
+		"/home/oliver/cmp_payment.html",
+		"/home/oliver/Development/betago/app/src/components/profile/cmp_profile-edit.html",
+		"/home/oliver/Development/betago/app/src/components/report/cmp_report-analysis.html",
+		"/home/oliver/Development/betago/app/src/data_html/account/account_bets-open.html",
+		"/home/oliver/Development/betago/app/src/data_html/account/account_bets-rated.html",
+		"/home/oliver/Development/betago/app/src/data_html/account/account_statements-all.html",
+		"/home/oliver/Development/betago/app/src/data_html/account/account_statements-bets.html",
+		"/home/oliver/Development/betago/app/src/data_html/account/account_statements-payments.html",
+		"/home/oliver/Development/betago/app/src/data_html/bet/bet_asian-handicap.html",
+		"/home/oliver/Development/betago/app/src/data_html/bet/bet_both-score-ou.html",
+		"/home/oliver/Development/betago/app/src/data_html/bet/bet_both-score.html",
+		"/home/oliver/Development/betago/app/src/data_html/bet/bet_handicap.html",
+		"/home/oliver/Development/betago/app/src/data_html/bet/bet_live.html",
+		"/home/oliver/Development/betago/app/src/data_html/bet/bet_over-under.html",
+		"/home/oliver/Development/betago/app/src/data_html/betslip/betslip-empty.html",
+		"/home/oliver/Development/betago/app/src/data_html/betslip/betslip-error.html",
+		"/home/oliver/Development/betago/app/src/data_html/betslip/betslip-placed.html",
+		"/home/oliver/Development/betago/app/src/data_html/confirmation/confirmation_error.html",
+		"/home/oliver/Development/betago/app/src/data_html/confirmation/confirmation_register.html",
+		"/home/oliver/Development/betago/app/src/data_html/confirmation/confirmation_success.html",
+		"/home/oliver/Development/betago/app/src/data_html/homepage/homepage.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_aboutus.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_competence.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_contact.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_data-security.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_help.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_imprint.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_privacy-modal.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_privacy.html"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 92.0,
+		"where_history":
+		[
+			"-*/home/oliver/Development/betago/app/src,/home/oliver/Development/betago/grunt,*.js,*.inc,*.html,-*/home/oliver/Development/betago/app/src/inc/resource/*",
+			"/home/oliver/Development/betago/app/src,-*/home/oliver/Development/betago/grunt,*.inc,*.html,-*/home/oliver/Development/betago/app/src/inc/resource/*",
+			"/home/oliver/Development/betago/app/src,/home/oliver/Development/betago/grunt,*.inc,*.html,-*/home/oliver/Development/betago/app/src/inc/resource/*",
+			"/home/oliver/Development/betago/app/src,/home/oliver/Development/betago/grunt,*.inc,*.html,-",
+			"/home/oliver/Development/betago/app/src,/home/oliver/Development/betago/grunt",
+			"/home/oliver/Development/betago/app/src",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"c__account-bets__content",
+			"messages",
+			"], \"",
+			": [",
+			"app/src/generated",
+			"'",
+			"([a-zA-Z])(\\s*)([A-Za-z0-9_\\-]+?)\\s*:",
+			"	\"confirm\": 	            \"{{ confirm }}\",",
+			"\"confirm\": 	\"{{ confirm }}\",",
+			"payment-form",
+			"includereplace",
+			"\"collapse\": \"betslipCollapse\"})",
+			" }} \"collapse\": \"betslipCollapse\"})",
+			"\"collapse\": \"betslipCollapse\"})",
+			"Wettschein(2) }}",
+			"}} }}",
+			"@@(.*?)([^\\'|\"|,|<|&|.|=|\\s]*)",
+			"@@navside-right-specific",
+			"@@(.*?)([^\\'|\"|,|<|&|.|=|\\s]*)",
+			"@@navside-left-type",
+			"@@(.*?)([^\\'|\"|,|<|&|.|=|\\s]*)",
+			"@@(.*?)([^\\'|\"|,|<|&|.|\\s]*)",
+			"@@(.*?)([^\\'|\"|,|<|&|\\s]*)",
+			"@@(.*?)([^\\'|\"|,\\s]*)",
+			"@@(.*?)([^\\'|\"|\\W|,\\s]*)",
+			"@@(.*?)([^\\'|\"]*)",
+			"\"#@@collapse\"",
+			"\"@@(.*?)([^\"|]*)",
+			"\"@@(.*?)([^,|]*)",
+			"\"@@(.*?)([^\"|]*)",
+			"@@(.*?)([^\\W|]*)",
+			"{{ include(.*?)(@@(.*?)([^\"|]*))",
+			"{{ include(.*?)(@@(.*?)([^\\W|]*))",
+			"{{ include(.*?)([^}}]*)([^\\s|]*)",
+			"{{(.*?)([^\\W|]*)",
+			"@@(.*?)([^\\W|]*)",
+			"includereplace",
+			"@@include(.*?)([^)]*)([^\\s|]*)",
+			"@@include(.*?)([^\\s|]*)",
+			"\n@@include(.*?)([^\\s|]*)",
+			"@@include",
+			"})",
+			"^(?=\\@\\@include)(?!\\\".*\\\")(.*\\r?\\n)+\\s*(.*+\\n\\}\\))$",
+			"^(?=\\@\\@include)(.*)(.*\\r?\\n)+\\s*(.*+\\n\\}\\))$",
+			"(?=\\@\\@include)(.*)(.*\\r?\\n)+\\s*(.*+\\n\\}\\))",
+			"(?=\\@\\@include)(.*)(.*\\r?\\n)*\\s",
+			"(?=\\@\\@include)(.*),(.*)\\{(.*\\r?\\n)*\\s",
+			"(?=\\@\\@include)(.*),(.*)\\{(.*\\r?\\n.*)\\s",
+			"(?=\\@\\@include)(.*),(.*)\\{(.*\\n.*)\\s",
+			"(?=\\@\\@include)(.*),(.*)\\{(.*\\n.*\\n(.*))\\s",
+			"(?=\\@\\@include)(.*),(.*)\\{(.*\\n(.*\\n.*)*)(?=\\r\\}\\))\\s",
+			"(?=\\@\\@include)(.*),(.*)\\{(.*\\n(.*\\n(.*+?))*)(?=\\n\\}\\))\\s",
+			"^\\@\\@include(.*),(.*)$",
+			"test",
+			"pay",
+			"content/cmp_payment_provider.inc",
+			"c__payment__wrap",
+			"processIncludeContents",
+			"\"cmp_payment_provider.inc\"",
+			"submit-form",
+			"cmp_payment_@@submit.inc",
+			"submit-form.inc",
+			"cmp_payment_submit-form.inc",
+			"cmp_payment_submit-form",
+			"cmp_payment_@@submit",
+			"payment-submit-form",
+			"payment-submit",
+			"u__icons__chevron",
+			"u__delete",
+			"\"payment-formsubmit\"",
+			"\"payment-formsubmit\": 	\"@@payment-formsubmit\"",
+			"payment-form-submit",
+			"inc/",
+			"\"@@submit\"",
+			"no-cancel",
+			"betagostatus"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"],\n  \"",
+			":\n  [",
+			"grunt-setup",
+			"\"",
+			"'$1$3':",
+			"	\"confirm\": 	            \"{{ confirm }}\",\n	\"cancel\":               \"{{ cancel  }}\",",
+			"\"confirm\": 	            \"{{ confirm }}\",",
+			"\"confirm\": 	              \"{{ confirm }}\",",
+			"includereplacemore",
+			", \"collapse\": \"betslipCollapse\"}) }}",
+			"{{ $2 }}",
+			"\"#{{ collapse }}\"",
+			"{{ $2 }}",
+			"includereplacemore",
+			"{{ include$1$2) }}",
+			"^(?=\\{\\{\\ include)(.*)(.*\\r?\\n)+\\s*(.*+\\n\\}\\)\\ \\}\\))$",
+			"cmp_payment_provider.inc",
+			"\"content/cmp_payment_provider.inc\"",
+			"confirm",
+			"submit-form",
+			"\"payment-submit-form\"",
+			"\"payment-submit-form\": 	\"@@payment-submit-form\"",
+			"payment-formsubmit",
+			"",
+			"\"@@submit\",",
+			"cancel-no"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "global-vars.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"cmp_betslip_action--collapse",
+				"app/src/components/betslip/action/cmp_betslip_action--collapse.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 391.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

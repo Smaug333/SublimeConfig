@@ -8,6 +8,9 @@
 			"path": "/usr/share/gtksourceview-3.0"
 		},
 		{
+			"path": "/home/oliver/Development/grunt-plugins/global-vars"
+		},
+		{
 			"path": "/home/oliver/Development/Ecma"
 		},
 		{

@@ -1,0 +1,1738 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Remote:   origin @ git@gitlab.betago.systems:betago/web.git\nLocal:    mockup-integration ~/Development/betagoweb\nHead:     d017420 TPL-603 Update from Mockup\n\n\nStashes:\n	0: WIP on dev: e4db6c7 Fix 404s, Fix server-side rendering\n	1: On mockup-integration: rename to utils\n\nChanges:\n	Modified   BetagoWeb/src/main/resources/static/css/components.css\n\n\n# Movement:\n#    r = refresh status\n#    1-5 = jump to section\n#    n = next item, N = next section\n#    p = previous item, P = previous section\n#\n# Staging:\n#    s = stage file/section, S = stage all unstaged files\n#    ctrl+shift+s = stage all unstaged and untracked files\n#    u = unstage file/section, U = unstage all files\n#    backspace = discard file/section, shift+backspace = discard everything\n#\n# Commit:\n#    c = commit, C = commit -a (add unstaged)\n#    ctrl+shift+c = commit --amend (amend previous commit)\n#\n# Other:\n#    i = ignore file, I = ignore pattern\n#    enter = open file\n#    d = view diff\n#\n# Stashes:\n#    a = apply stash, A = pop stash\n#    z = create stash, Z = create stash including untracked files\n#    backspace = discard stash",
+			"settings":
+			{
+				"buffer_size": 1111,
+				"line_ending": "Unix",
+				"name": "*git-status*: betagoweb",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "import {FormattedMessage, FormattedNumber} from \"react-intl\";\nimport SettingsModal from \"../../components/App/SettingsModal\";\nimport {Link} from \"react-router\";\nimport {connect} from \"react-redux\";\nimport Clock from \"../Clock\";\nimport {logout, requestAccountInfo} from \"../../actions/user\";\nimport React, {Component, PropTypes} from \"react\";\n\nclass ModNavListUser extends Component {\n\n    componentDidMount() {\n        this.props.requestAccountInfo();\n    }\n\n    render() {\n        const {username, accountInfo: {balance}, currency, logout} = this.props;\n        return (\n            <div className=\"m__navlist__user-wrap\">\n                <div className=\"m__navlist__user-time\"><Clock /></div>\n               \n                <ul className=\"m__navlist__user\">\n                    <li className=\"m__navlist__user-add\">\n                        <a className=\"t__cursor__pointer\"><FormattedMessage id=\"btn.deposit\"/></a>\n                    </li>\n                    <li className=\"m__navlist__user-add\">\n                        <a className=\"t__cursor__pointer\"><FormattedMessage id=\"btn.cash_out\"/></a>\n                    </li>\n                    <li>\n                        <Link to=\"/account/tickets\" className=\"t__cursor__pointer\"><FormattedMessage id=\"btn.my_bets\"/></Link>\n                    </li>\n                </ul>\n                \n                <div className=\"m__navlist__client\">    \n                    <a href=\"javascript:void(0)\" className=\"t__cursor__pointer m__navlist__user-glyphs m__ui__user\"> { username }</a> \n                </div>\n\n\n                <ul className=\"m__navlist__user\">\n                    <li className=\"m__navlist__user-add\">\n                        <a className=\"t__cursor__pointer m__navlist-user__glyphs u__credit-card\">\n                            {\" \"}\n                            { balance &&\n                            <FormattedNumber value={ balance } style=\"currency\" currency={ currency }/>\n                            }\n                        </a>\n                    </li>\n                    \n\n                    <li>\n                        <button type=\"button\"\n                                className=\"c__navbar-login__btn btn u__button u__button__color--second m__form-login__btn-login m__navlist__btn-login\"\n                                onClick={ logout }>\n                            <FormattedMessage id=\"btn.logout\"/>\n                        </button>\n                    </li>\n                    <li>\n                        <Link type=\"button\" to=\"/account\"\n                              className=\"c__navbar-login__btn btn u__button u__button__color--first m__form-login__btn-register m__navlist__btn-register\">\n                            <FormattedMessage id=\"btn.my_account\"/>\n                        </Link>\n                    </li>\n\n                    <SettingsModal />\n\n                </ul>\n            </div>\n        )\n    }\n\n}\n\n\nModNavListUser.propTypes = {\n    username: PropTypes.string.isRequired,\n    balance: PropTypes.number,\n    currency: PropTypes.string.isRequired,\n    logout: PropTypes.func.isRequired\n};\n\nfunction mapStateToProps(state) {\n    return state.user;\n}\n\nconst mapDispatchToProps = {\n    logout,\n    requestAccountInfo\n};\n\nexport default connect(mapStateToProps, mapDispatchToProps)(ModNavListUser);",
+			"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/navigation/mod_navlist-user.js",
+			"file_size": 3363,
+			"file_write_time": 131177275952714018,
+			"settings":
+			{
+				"buffer_size": 3310,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/App/SettingsModal.js",
+			"settings":
+			{
+				"buffer_size": 5478,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Navside/Sport.js",
+			"settings":
+			{
+				"buffer_size": 3877,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Tickets/Ticket.js",
+			"settings":
+			{
+				"buffer_size": 6419,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Tickets/Tip.js",
+			"settings":
+			{
+				"buffer_size": 3537,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/node_modules/react-intl/src/components/date.js",
+			"settings":
+			{
+				"buffer_size": 1187,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Tickets/Result/index.js",
+			"settings":
+			{
+				"buffer_size": 1092,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Tickets/Result/Tennis.js",
+			"settings":
+			{
+				"buffer_size": 1045,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/node_modules/react-intl/src/components/message.js",
+			"settings":
+			{
+				"buffer_size": 4405,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<li className=\"m__navlist__user-account\">\n                        <a className=\"t__cursor__pointer\">\n                            <span className=\"m__navlist__user-glyphs u__user\"/>{\" \"}\n                            { username }\n                        </a>\n                    </li>",
+			"settings":
+			{
+				"buffer_size": 281,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 362.0,
+		"last_filter": "OPPRO",
+		"selected_items":
+		[
+			[
+				"OPPRO",
+				"Project Manager: Open Project"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"checkout ",
+				"Git: Checkout"
+			],
+			[
+				"orides",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"oricr",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"show",
+				"Git: Show Current File"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"check",
+				"Git: Checkout"
+			],
+			[
+				"addpro",
+				"Project Manager: Add Project"
+			],
+			[
+				"paco",
+				"Package Control: Install Package"
+			],
+			[
+				"checkou",
+				"Git: Checkout"
+			],
+			[
+				"prjmanaop",
+				"Project Manager: Add Project"
+			]
+		],
+		"width": 507.0
+	},
+	"console":
+	{
+		"height": 240.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/oliver/Development/betagoweb",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/java",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/java/com",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/java/com/betago",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/java/com/betago/react",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Payment",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Payment/Deposit",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Payment/Withdraw",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Profile",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Tickets",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Tickets/Result",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/App",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/BetSlip",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Information",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Navside",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Register",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Root",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/SportBets",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/grid",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/lists",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/lists/buttons",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/navigation",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/panels",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/node_modules",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/node_modules/chokidar",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/node_modules/react-intl",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/node_modules/react-intl/dist",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/node_modules/react-intl/src",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/node_modules/react-intl/src/components",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/node_modules/uglify-to-browserify",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/templates"
+	],
+	"file_history":
+	[
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/java/com/betago/react/React.java",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Tickets/IntervalFilter.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/templates/base.ftl",
+		"/home/oliver/.zshrc",
+		"/home/oliver/cd /home/oliver/Development/betago",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/App/index.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Root/index.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/grid/index.js",
+		"/media/oliver/partUbuntuExtend/oliver/.zshrc~",
+		"/home/oliver/scripts/betagostart.sh",
+		"/media/oliver/partUbuntuExtend/oliver/.zshrc.save",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/BetSlip/index.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Tickets/TypeFilter.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Information/InformationPlain.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/panels/mod_panel.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/panels/mod_panel--filter.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Register/Form.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Register/Success.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Register/Confirm.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Tickets/index.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Payment/Deposit/index.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Profile/index.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Payment/Withdraw/index.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Profile/DocumentVarification.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/BetSlip/Games/Bet.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/BetSlip/Tabs.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/BetSlip/buttons/ReuseButton.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Information/InformationNavside.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Navside/Country.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Navside/League.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/forms/mod_login-form.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/lists/buttons/bet-button.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/lists/mod_list-bet.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/lists/mod_list-bet_icons.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/lists/mod_list-match_live.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/navigation/mod_navlist-user.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/AccountNavi.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Tickets/CancelButton.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Tickets/Ticket.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/App/Navbar.js",
+		"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/App/SubNavbar.js",
+		"/home/oliver/.config/sublime-text-3/Packages/Search in Project/README.md",
+		"/home/oliver/Development/betago/INSTALL.md"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 92.0,
+		"where_history":
+		[
+			"/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"c__account-bets__filter",
+			"xdotool",
+			"m__panel__footer",
+			"m__ui-icons__",
+			"m__ui-icons__chevron",
+			"m__ui ",
+			"m__ui",
+			"m__ui__",
+			"betagostatus"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"u__chevron",
+			"u__"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1111,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								450,
+								450
+							]
+						],
+						"settings":
+						{
+							"__vi_external_disable": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Birds of Paradise (SL).tmTheme",
+							"default_dir": "/home/oliver/Development/betagoweb",
+							"draw_white_space": "none",
+							"git_repo": "/home/oliver/Development/betagoweb",
+							"git_status": true,
+							"git_view": "status",
+							"rulers":
+							[
+								35.9,
+								36.2
+							],
+							"syntax": "Packages/SublimeGit/syntax/SublimeGit Status.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/modules/navigation/mod_navlist-user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1710,
+								1710
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1765,
+										1766
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1707,
+										1708
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Birds of Paradise (SL).tmTheme",
+							"rulers":
+							[
+							],
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/App/SettingsModal.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5478,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2638,
+								2638
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2639,
+										2640
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										2602,
+										2603
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Birds of Paradise (SL).tmTheme",
+							"rulers":
+							[
+							],
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 347.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Navside/Sport.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3877,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3252,
+								3252
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										3539,
+										3540
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1961,
+										1962
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Birds of Paradise (SL).tmTheme",
+							"rulers":
+							[
+							],
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 600.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Tickets/Ticket.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6419,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3290,
+								3290
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										3289,
+										3290
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										3285,
+										3286
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Birds of Paradise (SL).tmTheme",
+							"rulers":
+							[
+							],
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 642.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Tickets/Tip.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								820,
+								820
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2673,
+										2674
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										422,
+										423
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Birds of Paradise (SL).tmTheme",
+							"rulers":
+							[
+							],
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/node_modules/react-intl/src/components/date.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								910,
+								910
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										915,
+										916
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										603,
+										604
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Birds of Paradise (SL).tmTheme",
+							"rulers":
+							[
+							],
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Tickets/Result/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1092,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Birds of Paradise (SL).tmTheme",
+							"rulers":
+							[
+							],
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/jsx/components/Account/Tickets/Result/Tennis.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1045,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								916,
+								916
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										921,
+										922
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										304,
+										305
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Birds of Paradise (SL).tmTheme",
+							"rulers":
+							[
+							],
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/oliver/Development/betagoweb/BetagoWeb/src/main/resources/static/node_modules/react-intl/src/components/message.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4405,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								437,
+								437
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										4052,
+										4053
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										436,
+										437
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Birds of Paradise (SL).tmTheme",
+							"rulers":
+							[
+							],
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 294.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								226,
+								226
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Birds of Paradise (SL).tmTheme",
+							"default_dir": "/home/oliver/Development/betagoweb",
+							"rulers":
+							[
+							],
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-checkout":
+	{
+		"height": 102.0
+	},
+	"output.git-commit":
+	{
+		"height": 96.0
+	},
+	"output.git-push":
+	{
+		"height": 96.0
+	},
+	"pinned_build_system": "",
+	"project": "betagoweb.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 405.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

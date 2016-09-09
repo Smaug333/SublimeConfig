@@ -1,0 +1,871 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"gutter",
+				"padding-grid-gutter"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Remote:   origin @ git@github.com:thomas-kubiza/betago_templates.git\nLocal:    TPL-615_global_vars ~/Development/betago\nHead:     591be38 TPL-615 bad push for home office, debugging\n\n\nStashes:\n	0: WIP on TPL-636_account_globals: 1e387b8 TPL-615 bugfix missing quotes in object values\n\nNothing to commit (working directory clean)\n\n# Movement:\n#    r = refresh status\n#    1-5 = jump to section\n#    n = next item, N = next section\n#    p = previous item, P = previous section\n#\n# Staging:\n#    s = stage file/section, S = stage all unstaged files\n#    ctrl+shift+s = stage all unstaged and untracked files\n#    u = unstage file/section, U = unstage all files\n#    backspace = discard file/section, shift+backspace = discard everything\n#\n# Commit:\n#    c = commit, C = commit -a (add unstaged)\n#    ctrl+shift+c = commit --amend (amend previous commit)\n#\n# Other:\n#    i = ignore file, I = ignore pattern\n#    enter = open file\n#    d = view diff\n#\n# Stashes:\n#    a = apply stash, A = pop stash\n#    z = create stash, Z = create stash including untracked files\n#    backspace = discard stash",
+			"settings":
+			{
+				"buffer_size": 1090,
+				"line_ending": "Unix",
+				"name": "*git-status*: betago",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "/home/oliver/scripts/zsh/zsh-config/aliases.zsh",
+			"settings":
+			{
+				"buffer_size": 1053,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/oliver/scripts/betagostart.zsh",
+			"settings":
+			{
+				"buffer_size": 1249,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 142.0,
+		"last_filter": "prjmed",
+		"selected_items":
+		[
+			[
+				"prjmed",
+				"Project Manager: Open Project in New Window"
+			],
+			[
+				"checkou",
+				"Git: Checkout"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"html",
+				"StringEncode: HTML Entitize"
+			],
+			[
+				"html encode",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"json",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"show",
+				"Git: Show Current File"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"proj",
+				"Project: Save As"
+			],
+			[
+				"prjm",
+				"Project Manager"
+			],
+			[
+				"htmlent",
+				"StringEncode: HTML Entitize"
+			],
+			[
+				"check",
+				"Git: Checkout"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"prm",
+				"Project Manager: Edit Project"
+			],
+			[
+				"destr",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"ori",
+				"Origami: Create Pane Below"
+			],
+			[
+				"prmn",
+				"Project Manager: Open Project in New Window"
+			],
+			[
+				"oride",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"checko",
+				"Git: Checkout"
+			],
+			[
+				"checkoutb",
+				"Git: Checkout New Branch"
+			],
+			[
+				"paco",
+				"Package Control: Install Package"
+			],
+			[
+				"prjmanaop",
+				"Project Manager: Add Project"
+			]
+		],
+		"width": 732.0
+	},
+	"console":
+	{
+		"height": 240.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/oliver/scripts/betagostart.zsh",
+		"/home/oliver/scripts/zsh/zsh-config/functions.zsh",
+		"/home/oliver/.config/sublime-text-3/Packages/User/Projects/betago.sublime-project",
+		"/usr/bin/gnome-software",
+		"/home/oliver/Development/betago/app/src/components/payment/scss/_cmp_payment.scss",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/cmp_payment_action.inc",
+		"/home/oliver/Development/betago/app/src/data_html/payment/payment-request.html",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/wrapper/cmp_payment_cell.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/cmp_payment.html",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/cmp_payment_provider-list.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/cmp_payment_provider.inc",
+		"/home/oliver/Development/betago/grunt/includereplacemore.js",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/cmp_payment_provider-single.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/content/cmp_payment_header.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/wrapper/cmp_payment_start.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/content/cmp_payment_form.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/content/cmp_payment_header-no.inc",
+		"/home/oliver/Development/betago/app/src/data_html/payment/payment-out.html",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/cmp_payment_provider-all.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/table/cmp_payment_head-index.inc",
+		"/home/oliver/Development/betago/app/src/data_html/payment/payment-deposit.html",
+		"/home/oliver/Development/betago/app/src/data_html/payment/payment-options.html",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/table/cmp_payment_conditions.inc",
+		"/home/oliver/Development/betago/grunt/incGlobals.json",
+		"/home/oliver/Development/betago/Gruntfile.js",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/ui/cmp_payment_submit.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/ui/cmp_payment_confirm.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/ui/cmp_payment_cancel.inc",
+		"/home/oliver/Development/betago/app/src/components/payment/inc/helper-layout/cmp_payment_head-type.inc",
+		"/home/oliver/Development/betago/app/src/components/betslip/cmp_betslip-placed.html",
+		"/home/oliver/Development/betago/package.json",
+		"/home/oliver/Development/betago/app/src/components/betslip/action/cmp_betslip_action--collapse.html",
+		"/home/oliver/Development/betago/grunt/watch.js",
+		"/home/oliver/Development/betago/app/src/inc/grid/grid-start.inc",
+		"/home/oliver/Development/betago/app/src/components/betslip/cmp_betslip-error.html",
+		"/home/oliver/Development/betago/app/src/components/betslip/cmp_betslip.html",
+		"/home/oliver/Development/betago/app/src/components/betslip/cmp_betslip-empty.html",
+		"/home/oliver/Development/betago/app/src/components/legals/cmp_legals-contact-modal.html",
+		"/home/oliver/Development/betago/app/src/components/legals/cmp_legals-privacy-modal.html",
+		"/home/oliver/Development/betago/app/src/components/legals/cmp_legals-terms-modal.html",
+		"/home/oliver/Development/betago/app/src/components/login/cmp_login-modal.html",
+		"/home/oliver/Development/betago/app/src/components/settings-account/cmp_settings-account_password-forgot-modal.html",
+		"/home/oliver/Development/betago/app/src/components/settings-global/cmp_settings-global-modal.html",
+		"/home/oliver/Development/betago/app/src/components/tools/cmp_calculator.html",
+		"/home/oliver/Development/betago/app/src/data_html/grid/grid-flex.html",
+		"/home/oliver/Development/betago/app/src/inc/document-markup/document-start.inc",
+		"/home/oliver/Development/betago/app/src/inc/grid/grid-end.inc",
+		"/home/oliver/Development/betago/app/src/inc/grid/grid-loader_offcanvas.inc",
+		"/home/oliver/Development/betago/app/src/inc/grid/modal/grid-modal-defaults.inc",
+		"/home/oliver/Development/regex/regular.txt",
+		"/home/oliver/Development/betago/app/src/inc/grid/offcanvas/offcanvas_right-specific.inc",
+		"/home/oliver/Development/betago/app/src/inc/index/index_head.inc",
+		"/home/oliver/Development/betago/app/src/modules/lists/mod_list-match-fit.html",
+		"/home/oliver/Development/betago/app/src/modules/lists/mod_list-match-live.html",
+		"/home/oliver/Development/betago/app/src/modules/lists/mod_list-match.html",
+		"/home/oliver/Development/betago/app/src/modules/modals/inc/mod_modal_end-close.inc",
+		"/home/oliver/Development/betago/app/src/modules/modals/inc/mod_modal_end.inc",
+		"/home/oliver/Development/betago/app/src/modules/modals/inc/mod_modal_start.inc",
+		"/home/oliver/Development/betago/app/src/modules/offcanvas/inc/mod_offcanvas_button-all.inc",
+		"/home/oliver/Development/betago/app/src/modules/offcanvas/inc/mod_offcanvas_button-left.inc",
+		"/home/oliver/Development/betago/app/src/modules/offcanvas/inc/mod_offcanvas_button-right.inc",
+		"/home/oliver/Development/betago/app/src/modules/offcanvas/mod_offcanvas.html",
+		"/home/oliver/Development/betago/app/src/modules/offcanvas/inc/mod_offcanvas_button.inc",
+		"/home/oliver/Development/betago/grunt/aliases.yaml",
+		"/home/oliver/Development/betago/app/src/data_html/account/account_bets-all.html",
+		"/home/oliver/Development/betago/app/build/data_html/account/account_bets-all.html",
+		"/home/oliver/Development/betago/app/src/modules/forms/mod_form-login.html",
+		"/home/oliver/Development/betago/app/src/components/navbar/cmp_navbar.html",
+		"/home/oliver/Development/betago/app/src/inc/grid/modal/grid-modal-clear.inc",
+		"/home/oliver/Development/betago/app/src/inc/grid/offcanvas/offcanvas_left-flat.inc",
+		"/home/oliver/Development/betago/app/build/sites/account/account_bets-all.html",
+		"/home/oliver/Development/betago/grunt/includereplace.js",
+		"/home/oliver/regular.txt",
+		"/home/oliver/cmp_payment.html",
+		"/home/oliver/Development/betago/app/src/components/profile/cmp_profile-edit.html",
+		"/home/oliver/Development/betago/app/src/components/report/cmp_report-analysis.html",
+		"/home/oliver/Development/betago/app/src/data_html/account/account_bets-open.html",
+		"/home/oliver/Development/betago/app/src/data_html/account/account_bets-rated.html",
+		"/home/oliver/Development/betago/app/src/data_html/account/account_statements-all.html",
+		"/home/oliver/Development/betago/app/src/data_html/account/account_statements-bets.html",
+		"/home/oliver/Development/betago/app/src/data_html/account/account_statements-payments.html",
+		"/home/oliver/Development/betago/app/src/data_html/bet/bet_asian-handicap.html",
+		"/home/oliver/Development/betago/app/src/data_html/bet/bet_both-score-ou.html",
+		"/home/oliver/Development/betago/app/src/data_html/bet/bet_both-score.html",
+		"/home/oliver/Development/betago/app/src/data_html/bet/bet_handicap.html",
+		"/home/oliver/Development/betago/app/src/data_html/bet/bet_live.html",
+		"/home/oliver/Development/betago/app/src/data_html/bet/bet_over-under.html",
+		"/home/oliver/Development/betago/app/src/data_html/betslip/betslip-empty.html",
+		"/home/oliver/Development/betago/app/src/data_html/betslip/betslip-error.html",
+		"/home/oliver/Development/betago/app/src/data_html/betslip/betslip-placed.html",
+		"/home/oliver/Development/betago/app/src/data_html/confirmation/confirmation_error.html",
+		"/home/oliver/Development/betago/app/src/data_html/confirmation/confirmation_register.html",
+		"/home/oliver/Development/betago/app/src/data_html/confirmation/confirmation_success.html",
+		"/home/oliver/Development/betago/app/src/data_html/grid/grid-site.html",
+		"/home/oliver/Development/betago/app/src/data_html/homepage/homepage.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_aboutus.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_competence.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_contact.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_data-security.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_help.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_imprint.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_privacy-modal.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_privacy.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_responsible-gaming.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_rules.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_terms-modal.html",
+		"/home/oliver/Development/betago/app/src/data_html/legals/legals_terms.html",
+		"/home/oliver/Development/betago/app/src/data_html/login/login_modal.html",
+		"/home/oliver/Development/betago/app/src/data_html/login/navbar_logged-in.html",
+		"/home/oliver/Development/betago/app/src/data_html/profile/profile-documents.html",
+		"/home/oliver/Development/betago/app/src/data_html/profile/profile-edit.html",
+		"/home/oliver/Development/betago/app/src/data_html/profile/profile.html",
+		"/home/oliver/Development/betago/app/src/data_html/register/register.html",
+		"/home/oliver/Development/betago/app/src/data_html/report/report-analysis.html",
+		"/home/oliver/Development/betago/app/src/data_html/settings-account/settings-account-password-forgot-modal.html",
+		"/home/oliver/Development/betago/app/src/data_html/settings-account/settings-account_limits.html",
+		"/home/oliver/Development/betago/app/src/data_html/settings-account/settings-account_lock.html",
+		"/home/oliver/Development/betago/app/src/data_html/settings-account/settings-account_password.html",
+		"/home/oliver/Development/betago/app/src/data_html/settings-account/settings-account_user.html",
+		"/home/oliver/Development/betago/app/src/data_html/tickets/tickets.html",
+		"/home/oliver/Development/betago/app/src/data_html/tools/calculator.html",
+		"/home/oliver/Development/betago/app/src/inc/document-markup/document-end.inc",
+		"/home/oliver/Development/betago/app/src/inc/grid/grid-content-defaults.inc",
+		"/home/oliver/Development/betago/app/src/inc/grid/offcanvas/offcanvas_left.inc",
+		"/home/oliver/Development/betago/app/src/inc/grid/offcanvas/offcanvas_right.inc",
+		"/home/oliver/Development/betago/app/src/inc/grid/offcanvas/specific/offcanvas_right-all.inc",
+		"/home/oliver/Development/betago/app/src/index.html",
+		"/home/oliver/Development/betago/app/src/index_templates.html"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 92.0,
+		"where_history":
+		[
+			"-*/home/oliver/Development/betago/app/src,/home/oliver/Development/betago/grunt,*.js,*.inc,*.html,-*/home/oliver/Development/betago/app/src/inc/resource/*",
+			"/home/oliver/Development/betago/app/src,-*/home/oliver/Development/betago/grunt,*.inc,*.html,-*/home/oliver/Development/betago/app/src/inc/resource/*",
+			"/home/oliver/Development/betago/app/src,/home/oliver/Development/betago/grunt,*.inc,*.html,-*/home/oliver/Development/betago/app/src/inc/resource/*",
+			"/home/oliver/Development/betago/app/src,/home/oliver/Development/betago/grunt,*.inc,*.html,-",
+			"/home/oliver/Development/betago/app/src,/home/oliver/Development/betago/grunt",
+			"/home/oliver/Development/betago/app/src",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"	\"confirm\": 	            \"{{ confirm }}\",",
+			"\"confirm\": 	\"{{ confirm }}\",",
+			"payment-form",
+			"includereplace",
+			"\"collapse\": \"betslipCollapse\"})",
+			" }} \"collapse\": \"betslipCollapse\"})",
+			"\"collapse\": \"betslipCollapse\"})",
+			"Wettschein(2) }}",
+			"}} }}",
+			"@@(.*?)([^\\'|\"|,|<|&|.|=|\\s]*)",
+			"@@navside-right-specific",
+			"@@(.*?)([^\\'|\"|,|<|&|.|=|\\s]*)",
+			"@@navside-left-type",
+			"@@(.*?)([^\\'|\"|,|<|&|.|=|\\s]*)",
+			"@@(.*?)([^\\'|\"|,|<|&|.|\\s]*)",
+			"@@(.*?)([^\\'|\"|,|<|&|\\s]*)",
+			"@@(.*?)([^\\'|\"|,\\s]*)",
+			"@@(.*?)([^\\'|\"|\\W|,\\s]*)",
+			"@@(.*?)([^\\'|\"]*)",
+			"\"#@@collapse\"",
+			"\"@@(.*?)([^\"|]*)",
+			"\"@@(.*?)([^,|]*)",
+			"\"@@(.*?)([^\"|]*)",
+			"@@(.*?)([^\\W|]*)",
+			"{{ include(.*?)(@@(.*?)([^\"|]*))",
+			"{{ include(.*?)(@@(.*?)([^\\W|]*))",
+			"{{ include(.*?)([^}}]*)([^\\s|]*)",
+			"{{(.*?)([^\\W|]*)",
+			"@@(.*?)([^\\W|]*)",
+			"includereplace",
+			"@@include(.*?)([^)]*)([^\\s|]*)",
+			"@@include(.*?)([^\\s|]*)",
+			"\n@@include(.*?)([^\\s|]*)",
+			"@@include",
+			"})",
+			"^(?=\\@\\@include)(?!\\\".*\\\")(.*\\r?\\n)+\\s*(.*+\\n\\}\\))$",
+			"^(?=\\@\\@include)(.*)(.*\\r?\\n)+\\s*(.*+\\n\\}\\))$",
+			"(?=\\@\\@include)(.*)(.*\\r?\\n)+\\s*(.*+\\n\\}\\))",
+			"(?=\\@\\@include)(.*)(.*\\r?\\n)*\\s",
+			"(?=\\@\\@include)(.*),(.*)\\{(.*\\r?\\n)*\\s",
+			"(?=\\@\\@include)(.*),(.*)\\{(.*\\r?\\n.*)\\s",
+			"(?=\\@\\@include)(.*),(.*)\\{(.*\\n.*)\\s",
+			"(?=\\@\\@include)(.*),(.*)\\{(.*\\n.*\\n(.*))\\s",
+			"(?=\\@\\@include)(.*),(.*)\\{(.*\\n(.*\\n.*)*)(?=\\r\\}\\))\\s",
+			"(?=\\@\\@include)(.*),(.*)\\{(.*\\n(.*\\n(.*+?))*)(?=\\n\\}\\))\\s",
+			"^\\@\\@include(.*),(.*)$",
+			"test",
+			"pay",
+			"content/cmp_payment_provider.inc",
+			"c__payment__wrap",
+			"processIncludeContents",
+			"\"cmp_payment_provider.inc\"",
+			"submit-form",
+			"cmp_payment_@@submit.inc",
+			"submit-form.inc",
+			"cmp_payment_submit-form.inc",
+			"cmp_payment_submit-form",
+			"cmp_payment_@@submit",
+			"payment-submit-form",
+			"payment-submit",
+			"u__icons__chevron",
+			"u__delete",
+			"\"payment-formsubmit\"",
+			"\"payment-formsubmit\": 	\"@@payment-formsubmit\"",
+			"payment-form-submit",
+			"inc/",
+			"\"@@submit\"",
+			"no-cancel",
+			"betagostatus"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"	\"confirm\": 	            \"{{ confirm }}\",\n	\"cancel\":               \"{{ cancel  }}\",",
+			"\"confirm\": 	            \"{{ confirm }}\",",
+			"\"confirm\": 	              \"{{ confirm }}\",",
+			"includereplacemore",
+			", \"collapse\": \"betslipCollapse\"}) }}",
+			"{{ $2 }}",
+			"\"#{{ collapse }}\"",
+			"{{ $2 }}",
+			"includereplacemore",
+			"{{ include$1$2) }}",
+			"^(?=\\{\\{\\ include)(.*)(.*\\r?\\n)+\\s*(.*+\\n\\}\\)\\ \\}\\))$",
+			"cmp_payment_provider.inc",
+			"\"content/cmp_payment_provider.inc\"",
+			"confirm",
+			"submit-form",
+			"\"payment-submit-form\"",
+			"\"payment-submit-form\": 	\"@@payment-submit-form\"",
+			"payment-formsubmit",
+			"",
+			"\"@@submit\",",
+			"cancel-no"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								664,
+								664
+							]
+						],
+						"settings":
+						{
+							"__vi_external_disable": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Birds of Paradise (SL).tmTheme",
+							"default_dir": "/home/oliver/Development/betago",
+							"draw_white_space": "none",
+							"git_repo": "/home/oliver/Development/betago",
+							"git_status": true,
+							"git_view": "status",
+							"rulers":
+							[
+							],
+							"syntax": "Packages/SublimeGit/syntax/SublimeGit Status.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 322.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/oliver/scripts/zsh/zsh-config/aliases.zsh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1053,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								785,
+								785
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										784,
+										785
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										769,
+										770
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Birds of Paradise (SL).tmTheme",
+							"rulers":
+							[
+							],
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/oliver/scripts/betagostart.zsh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1249,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1117,
+								1117
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Birds of Paradise (SL).tmTheme",
+							"rulers":
+							[
+								32.9,
+								33.2
+							],
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-checkout":
+	{
+		"height": 102.0
+	},
+	"output.git-commit":
+	{
+		"height": 102.0
+	},
+	"output.git-push":
+	{
+		"height": 102.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 84.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"cmp_betslip_action--collapse",
+				"app/src/components/betslip/action/cmp_betslip_action--collapse.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 391.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
